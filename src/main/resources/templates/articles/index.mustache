@@ -1,4 +1,4 @@
-{{layouts/header}}
+{{>layouts/header}}
 
 <table class="table">
     <thead>
@@ -12,11 +12,13 @@
     {{#articleList}}
         <tr>
             <th>{{id}}</th>
-            <td>{{title}}</td>
+            <td><a href="/articles/{{id}}">{{title}}</a></td>
             <td>{{content}}</td>
         </tr>
     {{/articleList}}
     </tbody>
 </table>
 
-{{layouts/footer}}
+<a href="/articles/new">New Article</a>
+
+{{>layouts/footer}}
