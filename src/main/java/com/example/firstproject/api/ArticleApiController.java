@@ -35,6 +35,18 @@ public class ArticleApiController {
     }
 
     // PATCH
+    @PatchMapping("/api/articles/{id}")
+    public Article update(@PathVariable Long id,
+                          @RequestBody ArticleForm dto) {
+        // 1: 수정용 Entity 생성
+
+        // 2: 대상 Entity 조회
+
+        // 3: 잘못된 요청 처리(대상이 없거나, id가 다른 경우)
+
+        // 4: 업데이트 및 정상 응답(200)
+        return null;
+    }
 
     // DELETE
 }
